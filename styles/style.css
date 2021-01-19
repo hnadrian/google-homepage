@@ -1,0 +1,76 @@
+body {
+    font-family: arial;
+    font-size: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    margin: 0px auto;
+}
+
+#main-content {
+    padding-top: 30vh;
+}
+
+#search-box {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    top: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgb(202, 202, 202);
+    box-shadow: 1px 1px 3px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    outline-width: 0;
+    box-shadow: 1.5px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    padding: 5px;
+}
+
+#navbar-home, #navbar-store {
+    float: left;
+}
+
+#navbar-gmail, #navbar-images {
+    float: right;
+}
+
+#footer {
+    margin: 7px;
+    padding: 0;
+}
+
+.footer-item {
+    display: inline-block;
+    padding: 5px;
+}
+
+#footer-advertising, #footer-business, #footer-how {
+    float: left;
+}
+
+#footer-privacy, #footer-terms, #footer-settings {
+    float: right;
+}
+
+footer {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid;
+    border-color: rgb(184, 184, 184);
+}
