@@ -1,6 +1,8 @@
 body {
     font-family: arial;
     font-size: 14px;
+    height: 100%;
+    margin: 0;
 }
 
 a {
@@ -13,7 +15,7 @@ a {
     margin: 0px auto;
 }
 
-#main-content {
+#main-div {
     padding-top: 30vh;
 }
 
@@ -22,10 +24,15 @@ a {
     display: block;
     margin: 0px auto;
     top: 20px;
+    height: 33px;
+    width: 400px;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     border-color: rgb(202, 202, 202);
     box-shadow: 1px 1px 3px 0.5px rgba(0, 0, 0, 0.1);
+    text-indent: 17px;
+    font-size: larger;
+    color: rgb(34, 34, 34);
 }
 
 input:focus {
@@ -33,27 +40,59 @@ input:focus {
     box-shadow: 1.5px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1);
 }
 
+#button-div {
+    display: flex;
+    justify-content: center;
+}
+
+#lucky-button, #search-button{
+    margin: auto 7px;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: rgb(247, 247, 247);
+    padding: 7px 15px;
+    background-color: rgb(247, 247, 247);
+}
+
+#search-button:hover, #lucky-button:hover {
+    border-color: rgb(202, 202, 202);
+}
+
 #navbar {
     margin: 0;
     padding: 0;
 }
+
 
 .navbar-item {
     display: inline-block;
     padding: 5px;
 }
 
-#navbar-home, #navbar-store {
+#navbar-about, #navbar-store {
     float: left;
 }
 
-#navbar-gmail, #navbar-images {
+#navbar-images, #navbar-gmail {
     float: right;
 }
 
-#footer {
-    margin: 7px;
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid;
+    border-color: rgb(184, 184, 184);
+}
+
+#footer-navbar {
     padding: 0;
+    margin: 0;
+    overflow: auto
 }
 
 .footer-item {
@@ -67,10 +106,4 @@ input:focus {
 
 #footer-privacy, #footer-terms, #footer-settings {
     float: right;
-}
-
-footer {
-    background-color: rgb(236, 236, 236);
-    border: 1px solid;
-    border-color: rgb(184, 184, 184);
 }
